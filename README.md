@@ -1,13 +1,23 @@
 calendar.vim
 ============
 
+## This is a bugfix fork of the great work at [mattn/calendar-vim](https://github.com/mattn/calendar-vim)
+
+It might become redundant once my pull request is accepted. 
+
+The bugfix **only** affects the calculation of the `week` (day
+of week) parameter passed on to calendar action functions.
+
+## Its intended use is adding a calendar to [telekasten.nvim](https://github.com/renerocksai/telekasten.nvim)
+
+#### Original README follows:
+
 `calendar.vim` creates a calendar window you can use within vim.  It is useful
 in its own right as a calendar-inside-vim.  It also provides hooks to customise
 its behaviour, making it a good basis for writing new plugins which require
 calendar functionality (see `:help calendar-hooks` for more information).
 
-Installation
-------------
+#### Installation
 
 You can install `calendar.vim` in the usual way, by copying the contents of the
 `plugin`, `autoload` and `doc` directories into the equivalent directories
@@ -17,15 +27,10 @@ Alternatively, if you manage your plugins using [pathogen.vim][1], you can
 simply clone into the `bundle` directory:
 
     cd ~/.vim/bundle
-    git clone git://github.com/mattn/calendar-vim
+    git clone git://github.com/renerocksai/calendar-vim
 
-Or, using submodules:
 
-    cd ~/.vim
-    git submodule add git://github.com/mattn/calendar-vim bundle/calendar-vim
-
-Usage
------
+#### Usage
 
 Bring up a calendar based on today's date in a vertically split window:
 
