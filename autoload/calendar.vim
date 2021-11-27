@@ -182,7 +182,6 @@ function! calendar#action(...)
     else
       let width = winwidth(0)
       let height = winheight(0)
-      echo width height
     endif
     let rene_d = (width - 5) / 8
     let rene_r = (width - 7 * rene_d - 3) / 2 
